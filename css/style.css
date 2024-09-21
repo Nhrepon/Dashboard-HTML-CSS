@@ -39,21 +39,43 @@
     display: flex;
     flex-direction: row;
 }
-
-.navigation{
-    width: 200px;
+.top-navigation{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
     background: aliceblue;
-    min-height: 100vh;
-    float: left;
+    position: sticky;
+    top: 0;
 }
-.logo{
+.top-navigation .logo{
+    width: 200px;
     font-weight: bold;
     font-size: 26px;
     color: darkgreen;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.28);
     padding: 8px 10px;
     text-align: center;
+    background: aliceblue;
 }
+.top-navigation .top-menu ul{
+    list-style-type: none;
+}
+.top-navigation .top-menu ul li{
+    float: left;
+    padding: 5px 8px;
+}
+.top-navigation .top-menu ul li a{
+    text-decoration: none;
+}
+
+.side-navigation{
+    width: 200px;
+    background: aliceblue;
+    min-height: 100vh;
+}
+
 .menu{
 
 }
