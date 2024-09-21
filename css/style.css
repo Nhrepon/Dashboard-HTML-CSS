@@ -1,0 +1,117 @@
+
+*, *::before,*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0 solid transparent;
+}
+
+   html {
+       -webkit-text-size-adjust: 100%;
+   }
+
+   body {
+       width: 100%; min-width: 1200px; margin:0 auto;
+       min-height: 100vh;
+       line-height: 1;
+       text-rendering: optimizeSpeed;
+   }
+   a {
+       cursor: pointer;
+       color: inherit;
+       text-decoration: inherit;
+       -webkit-tap-highlight-color: transparent;
+   }
+
+   h1, h2, h3, h4, h5, h6 {
+       font-size: inherit;
+       font-weight: inherit;
+   }
+
+   ol, ul {
+       list-style: none;
+   }
+
+.main{
+    display: flex;
+    flex-direction: row;
+}
+
+.navigation{
+    width: 200px;
+    background: aliceblue;
+    min-height: 100vh;
+    float: left;
+}
+.logo{
+    font-weight: bold;
+    font-size: 26px;
+    color: darkgreen;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.28);
+    padding: 8px 10px;
+    text-align: center;
+}
+.menu{
+
+}
+.menu ul{
+    list-style-type: none;
+}
+.menu ul li{
+    width: 100%;
+    padding: 12px;
+}
+
+.menu ul li:hover{
+    background: darkgreen;
+    transition: all 0.5s ease-in-out;
+}
+.menu ul li:hover a{
+    color: white;
+    transition: all 0.5s ease-in-out;
+    font-weight: bold;
+}
+.content{
+padding: 20px;
+}
+.content h2{
+    font-size: 22px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
